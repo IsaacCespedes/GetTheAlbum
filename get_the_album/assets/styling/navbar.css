@@ -1,0 +1,69 @@
+nav#navbar {
+  width: 100%;
+  /* padding: 1rem; */
+  /* margin-left: 0 !important; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+nav#navbar .home-link {
+  display: flex;
+  align-items: center;
+}
+
+nav#navbar .home-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid hsla(172.94,10.43%,31.96%,0.3);
+  transition: all 0.3s ease;
+}
+
+nav#navbar .home-link:hover .home-icon {
+  border-color: hsla(172.94,10.43%,31.96%,0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav#navbar .blog-link {
+  color: hsla(172.94,10.43%,31.96%,1);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border: 1px solid hsla(172.94,10.43%,31.96%,0.3);
+  border-radius: 5px;
+  text-align: right;
+}
+
+nav#navbar .blog-link:hover {
+  background-color: hsla(172.94,10.43%,31.96%,0.1);
+  border-color: hsla(172.94,10.43%,31.96%,0.8);
+  color: hsla(172.94,10.43%,31.96%,0.9);
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav#navbar .blog-link:active {
+  transform: scale(0.98);
+  background-color: hsla(172.94,10.43%,31.96%,0.2);
+  box-shadow: none;
+}
+
+
+/* Touch device specific styles */
+@media (hover: none) {
+  .blog-link a {
+      -webkit-tap-highlight-color: transparent; /* Removes tap highlight on iOS */
+  }
+  
+  .blog-link a:active {
+      transform: scale(0.98);
+      background-color: hsla(172.94,10.43%,31.96%,0.2);
+      box-shadow: none;
+  }
+}
