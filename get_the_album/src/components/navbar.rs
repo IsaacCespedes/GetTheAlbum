@@ -9,6 +9,9 @@ const ALBUM_ART: Asset = asset!(
 
 #[component]
 pub fn Navbar() -> Element {
+    let current_route = use_route::<Route>();
+    let is_comments_active = matches!(current_route, Route::Comments {});
+
     rsx! {
         document::Link { rel: "stylesheet", href: NAVBAR_CSS }
         document::Link { rel: "stylesheet", href: "/assets/styling/main.css" }
@@ -18,8 +21,13 @@ pub fn Navbar() -> Element {
             Link { to: Route::Home {}, class: "home-link",
                 img { src: ALBUM_ART, alt: "Home", class: "home-icon" }
             }
-            Link { to: Route::Comments {}, class: "blog-link", "Comments" }
-                // Link { to: Route::Blog { id: 1 }, class: "blog-link", "Blog" }
+            Link {
+                to: Route::Comments {},
+                class: format!("blog-link{}", if is_comments_active { " active" } else { "" }),
+                i { class: "fas fa-comments" }
+                i { class: "mr-2", " " }
+                "Comments"
+            }
         }
 
         Outlet::<Route> {}

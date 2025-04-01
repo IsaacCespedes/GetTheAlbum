@@ -54,6 +54,13 @@ nav#navbar .blog-link:active {
   box-shadow: none;
 }
 
+nav#navbar .blog-link.active {
+  background-color: hsla(172.94,10.43%,31.96%,0.2);
+  border-color: hsla(172.94,10.43%,31.96%,0.8);
+  color: hsla(172.94,10.43%,31.96%,0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 /* Touch device specific styles */
 @media (hover: none) {
