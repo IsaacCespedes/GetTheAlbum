@@ -1,7 +1,7 @@
 use dioxus::prelude::*;
 
 use components::Navbar;
-use views::{Blog, Home, Song};
+use views::{Blog, Comments, Home, Song};
 
 mod components;
 mod views;
@@ -16,6 +16,8 @@ enum Route {
     Blog { id: i32 },
     #[route("/song/:id")]
     Song { id: i32 },
+    #[route("/comments")]
+    Comments {},
 }
 
 const FAVICON: Asset = asset!("/assets/images/favicon.png");

@@ -17,7 +17,9 @@ pub fn Hero() -> Element {
                 id: "links",
                 class: "flex justify-center",
                 style: "margin-bottom: 24px;",
-                h5 { style: "margin-bottom: 8px; text-align: center;", "More coming soon..." }
+                h5 { style: "margin-bottom: 8px; text-align: center;",
+                    "7 out of 21 + 2 out of 7. More coming soon..."
+                }
 
                 Link { to: Route::Song { id: 1 }, class: "",
                     "1. Intro - (Written) "
@@ -146,7 +148,7 @@ pub fn Hero() -> Element {
                 }
                 h5 { style: "margin-bottom: 8px; text-align: center;", "Bonuses" }
                 Link {
-                    to: Route::Song { id: 15 },
+                    to: Route::Song { id: 22 },
                     class: " bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "Every Morning - (Afrobeat / Amapiano) "
                     i { class: "fas fa-right-to-bracket text-black ml-2" }
@@ -169,17 +171,17 @@ pub fn Hero() -> Element {
                     "Reflection - (Rock) "
                     i { class: "fas fa-school-lock text-black ml-2" }
                 }
-                Link {
-                    to: Route::Song { id: 19 },
-                    class: " bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
-                    "Jade Chess Set: The Chess Song - (Jingle) "
-                    i { class: "fas fa-right-to-bracket text-black ml-2" }
-                }
                 div {
                     class: "text-gray-500",
                     style: "font-size: x-large; margin: 10px 0px; padding: 10px;",
-                    "Lap Around The Sun: The Birthday Song - (Swing) "
+                    "Jade Chess Set: The Chess Song - (Jingle) "
                     i { class: "fas fa-school-lock text-black ml-2" }
+                }
+                Link {
+                    to: Route::Song { id: 27 },
+                    class: " bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
+                    "Lap Around The Sun: The Birthday Song - (Swing) "
+                    i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
                 div {
                     class: "text-gray-500",

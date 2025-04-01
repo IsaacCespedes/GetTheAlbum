@@ -18,7 +18,8 @@ pub fn Navbar() -> Element {
             Link { to: Route::Home {}, class: "home-link",
                 img { src: ALBUM_ART, alt: "Home", class: "home-icon" }
             }
-            Link { to: Route::Blog { id: 1 }, class: "blog-link", "Blog" }
+            Link { to: Route::Comments {}, class: "blog-link", "Comments" }
+                // Link { to: Route::Blog { id: 1 }, class: "blog-link", "Blog" }
         }
 
         Outlet::<Route> {}
