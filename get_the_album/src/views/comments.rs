@@ -146,6 +146,7 @@ pub fn Comments() -> Element {
     rsx! {
       document::Link { rel: "stylesheet", href: COMMENTS_CSS }
       div { class: "comments-container",
+        h1 { class: "text-3xl font-bold mb-8", "Coming Soon" }
         // Comment form
         div { class: "comment-form",
           div { class: "mb-4",
