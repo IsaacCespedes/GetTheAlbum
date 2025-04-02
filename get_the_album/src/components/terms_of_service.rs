@@ -78,7 +78,24 @@ pub fn TermsOfService() -> Element {
                 }
                 h3 { class: "text-xl font-semibold mt-4 mb-2", "5.1 Permitted Use" }
                 p {
-                    "Users may stream and download tracks where permitted but may not modify, sell, or redistribute them without prior written permission."
+                    "Users may stream and, where permitted, download tracks from this website for personal, non-commercial use only."
+                }
+                p {
+                    "Commercial use, redistribution, remixing, public performance, or inclusion in media (e.g., podcasts, radio, livestreams) is not permitted without one of the following:"
+                }
+                p { "(a) prior written permission from the copyright owner or," }
+                p { "(b) proper accreditation to the artist and/or website and" }
+                p {
+                    "(c) notification to and appropriate licensing through relevant rights organizations (such as BMI) where applicable."
+                }
+                p {
+                    "If you wish to use the music in a public or commercial context — such as at a live event, online video, radio broadcast, or any other scenario that qualifies as a public performance — you must:"
+                }
+                p { "Clearly credit the artist and album," }
+                p { "Notify the performance rights organization (e.g., BMI) as required, and" }
+                p { "Obtain any additional licenses required by your use case." }
+                p {
+                    "Failure to comply with these requirements may result in removal of content access and/or legal action."
                 }
                 p {
                     "Blogs and educational material may be shared for personal use but cannot be copied or rehosted commercially."
