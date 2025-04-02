@@ -2,7 +2,7 @@ use dioxus::prelude::*;
 
 const ECHO_CSS: Asset = asset!("/assets/styling/echo.css");
 
-/// Echo component that demonstrates fullstack server functions.
+/// Echo component to demonstrate fullstack server functions.
 #[component]
 pub fn Echo() -> Element {
     let mut response = use_signal(|| String::new());
@@ -29,8 +29,8 @@ pub fn Echo() -> Element {
     }
 }
 
-/// Echo the user input on the server.
-#[server(EchoServer)]
-async fn echo_server(input: String) -> Result<String, ServerFnError> {
-    Ok(input)
-}
+// /// Echo the user input on the server.
+// #[server(EchoServer)]
+// async fn echo_server(input: String) -> Result<String, ServerFnError> {
+//     Ok(input)
+// }
