@@ -32,11 +32,6 @@ pub fn Song15() -> Element {
             p { "Musiversal Platform for coordination and scheduling" }
             p { "Peace" }
         }
-
-        div { style: "margin: 64px;",
-            p { "© 2025" }
-            p { "(Instrumental only)" }
-        }
         Footer {}
     }
 }

@@ -21,7 +21,7 @@ pub fn Song1() -> Element {
             p { "This know..." }
         }
 
-        div { style: "margin-top: 64px; margin-bottom: 64px;",
+        div { style: "margin: 64px;",
             p { "A cute 4+2 or 5+1 bar, depending on how you look at it" }
             p {
                 "Isaac can find the exact day and time he started writing this piece, and where he was."

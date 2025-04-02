@@ -9,7 +9,16 @@ title = "get_the_album"
 [web.resource]
 
 # Additional CSS style files
-style = []
+style = [
+  "/assets/tailwind.css",
+  "/assets/styling/main.css",
+  "/assets/styling/song.css",
+  "/assets/styling/album.css",
+  "/assets/styling/comments.css",
+  "/assets/styling/footer.css",
+  "/assets/styling/navbar.css",
+  "/assets/styling/terms.css",
+]
 
 # Additional JavaScript files
 script = []
