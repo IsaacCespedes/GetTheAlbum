@@ -20,13 +20,13 @@ pub fn Song27() -> Element {
         src: "https://d1e6rbnlrwykmz.cloudfront.net/Lap+Around+the+Sun.mp3".to_string(),
         title: "Lap Around The Sun".to_string(),
       }
-      div {
+      div { style: "margin: 64px;",
         p { "Lyrics" }
         p { "It’s time to sing and dance and to have a lot of fun" }
         p { "Cause you won the whole race, ran a lap around the sun" }
         p { "It’s time to sing and dance and to have a lot of fun Aww yeaa" }
       }
-      div { style: "margin-top: 64px;",
+      div { style: "margin: 64px;",
         p { "-" }
         p { "Yup, just the best birthday song ever" }
         p {
