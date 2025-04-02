@@ -10,14 +10,14 @@ pub fn Echo() -> Element {
     rsx! {
         document::Link { rel: "stylesheet", href: ECHO_CSS }
         div { id: "echo",
-            h4 { "Server Functions Coming Soon" }
-            input {
-                placeholder: "Type here to echo server...",
-                oninput: move |event| async move {
-                    let data = echo_server(event.value()).await.unwrap();
-                    response.set(data);
-                },
-            }
+            h4 { "Server Functions OTW" }
+            // input {
+            //     placeholder: "Type here to echo server...",
+            //     oninput: move |event| async move {
+            //         let data = echo_server(event.value()).await.unwrap();
+            //         response.set(data);
+            //     },
+            // }
 
             if !response().is_empty() {
                 p {

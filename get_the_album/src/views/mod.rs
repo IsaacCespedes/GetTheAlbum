@@ -11,3 +11,6 @@ mod songs;
 
 mod comments;
 pub use comments::Comments;
+
+mod terms;
+pub use terms::Terms;

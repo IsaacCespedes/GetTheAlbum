@@ -1,0 +1,16 @@
+.song-count {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.song-count-top {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.song-count-bottom {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 8px;
+} 

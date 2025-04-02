@@ -111,10 +111,11 @@
 
 .comment-content {
     color: #2a3331;  /* Dark teal for content text */
-    line-height: 1.5;
-    max-height: 200px;  /* Maximum height before scrolling */
+    line-height: 3;
     overflow-y: auto;  /* Enable vertical scrolling */
     padding-right: 0.5rem;  /* Add some padding for the scrollbar */
+    touch-action: pan-y;  /* Enable vertical touch scrolling */
+    -webkit-overflow-scrolling: touch;  /* Smooth scrolling on iOS */
 }
 
 /* Style the scrollbar to match the theme */

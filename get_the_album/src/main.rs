@@ -1,7 +1,7 @@
 use dioxus::prelude::*;
 
 use components::Navbar;
-use views::{Blog, Comments, Home, Song};
+use views::{Blog, Comments, Home, Song, Terms};
 
 mod components;
 mod views;
@@ -18,6 +18,8 @@ enum Route {
     Song { id: i32 },
     #[route("/comments")]
     Comments {},
+    #[route("/terms")]
+    Terms {},
 }
 
 const FAVICON: Asset = asset!("/assets/images/favicon.png");
@@ -36,6 +38,10 @@ fn App() -> Element {
         document::Link {
             rel: "stylesheet",
             href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+        }
+        document::Link {
+            rel: "stylesheet",
+            href: "/assets/styles.css",
         }
 
         Router::<Route> {}

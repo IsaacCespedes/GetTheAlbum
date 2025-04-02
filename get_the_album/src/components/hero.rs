@@ -1,4 +1,4 @@
-use crate::components::Echo;
+use crate::components::{Echo, TermsAgreementButton};
 use crate::Route;
 use dioxus::prelude::*;
 
@@ -17,9 +17,14 @@ pub fn Hero() -> Element {
                 id: "links",
                 class: "flex justify-center",
                 style: "margin-bottom: 24px;",
-                h5 { style: "margin-bottom: 8px; text-align: center;",
-                    "7 out of 21 + 2 out of 7. More coming soon..."
+                h5 { style: "margin-bottom: 0px; padding-bottom: 0px; text-align: center;",
+                    "7 out of 21 + 2 out of 7"
                 }
+                h5 { style: "margin-bottom: 8px; margin-top: 0px; padding-top: 0px; text-align: center;",
+                    "More otw..."
+                }
+
+                TermsAgreementButton {}
 
                 Link { to: Route::Song { id: 1 }, class: "",
                     "1. Intro - (Written) "
