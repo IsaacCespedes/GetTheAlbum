@@ -31,11 +31,11 @@ pub fn Hero() -> Element {
                     i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
 
-                div {
-                    class: "text-gray-500",
-                    style: "font-size: x-large; margin: 10px 0px; padding: 10px;",
+                Link {
+                    to: Route::Song { id: 2 },
+                    class: "bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "2. I`onGivaFuu - (EDM) "
-                    i { class: "fas fa-school-lock text-black ml-2" }
+                    i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
                 div {
                     class: "text-gray-500",
@@ -45,25 +45,25 @@ pub fn Hero() -> Element {
                 }
                 Link {
                     to: Route::Song { id: 4 },
-                    class: " bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
+                    class: "bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "4. Lilly - (Hip Hop) "
                     i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
                 Link {
                     to: Route::Song { id: 5 },
-                    class: " bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
+                    class: "bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "5. Wisteria feat. Marta Garrett - (Classical Pop) "
                     i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
-                div {
-                    class: "text-gray-500",
-                    style: "font-size: x-large; margin: 10px 0px; padding: 10px;",
+                Link {
+                    to: Route::Song { id: 6 },
+                    class: "bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "6. The Lilacs - (Rock) "
-                    i { class: "fas fa-school-lock text-black ml-2" }
+                    i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
                 Link {
                     to: Route::Song { id: 7 },
-                    class: " bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
+                    class: "bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "7. Mafioso Mo(u)rning - (Classical Rock) "
                     i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
@@ -75,7 +75,7 @@ pub fn Hero() -> Element {
                 }
                 Link {
                     to: Route::Song { id: 9 },
-                    class: " bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
+                    class: "bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "9. Fur Elise - (Classical Rock) "
                     i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
@@ -85,11 +85,11 @@ pub fn Hero() -> Element {
                     "10. Bear Claw - (Trap Rock) "
                     i { class: "fas fa-school-lock text-black ml-2" }
                 }
-                div {
-                    class: "text-gray-500",
-                    style: "font-size: x-large; margin: 10px 0px; padding: 10px;",
+                Link {
+                    to: Route::Song { id: 11 },
+                    class: "bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "11. Girl You're Infinity - (Country Pop) "
-                    i { class: "fas fa-school-lock text-black ml-2" }
+                    i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
                 div {
                     class: "text-gray-500",
@@ -111,7 +111,7 @@ pub fn Hero() -> Element {
                 }
                 Link {
                     to: Route::Song { id: 15 },
-                    class: " bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
+                    class: "bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "15. Lightning Fire - (Rock) "
                     i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
@@ -135,7 +135,7 @@ pub fn Hero() -> Element {
                 }
                 Link {
                     to: Route::Song { id: 19 },
-                    class: " bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
+                    class: "bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "19. Lima To Sydney, Round-Trip - (Hip Hop) "
                     i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
@@ -154,7 +154,7 @@ pub fn Hero() -> Element {
                 h5 { style: "margin-bottom: 8px; text-align: center;", "Bonuses" }
                 Link {
                     to: Route::Song { id: 22 },
-                    class: " bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
+                    class: "bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "Every Morning - (Afrobeat / Amapiano) "
                     i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
@@ -176,15 +176,15 @@ pub fn Hero() -> Element {
                     "Reflection - (Rock) "
                     i { class: "fas fa-school-lock text-black ml-2" }
                 }
-                div {
-                    class: "text-gray-500",
-                    style: "font-size: x-large; margin: 10px 0px; padding: 10px;",
+                Link {
+                    to: Route::Song { id: 26 },
+                    class: "bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "Jade Chess Set: The Chess Song - (Jingle) "
-                    i { class: "fas fa-school-lock text-black ml-2" }
+                    i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
                 Link {
                     to: Route::Song { id: 27 },
-                    class: " bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
+                    class: "bg-gray-300 text-gray-500 border border-gray-400 rounded px-4 py-2 m-1 hover:bg-gray-300",
                     "Lap Around The Sun: The Birthday Song - (Swing) "
                     i { class: "fas fa-right-to-bracket text-black ml-2" }
                 }
@@ -205,7 +205,6 @@ pub fn Hero() -> Element {
                     }
                 }
             }
-                // p { class: "text-center", "Album Art" }
         }
     }
 }
