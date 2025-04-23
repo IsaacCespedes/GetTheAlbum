@@ -28,3 +28,7 @@ script = []
 # Javascript code file
 # serve: [dev-server] only
 script = []
+
+# Configure the server to handle client-side routing
+[web.app.server]
+fallback = "index.html"
